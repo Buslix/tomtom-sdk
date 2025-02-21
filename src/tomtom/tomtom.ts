@@ -27,8 +27,15 @@ class TomTom {
 	}
 
 	private async fetchData<T>(url: string): Promise<T> {
+		if (url.endsWith('?')) {
+			url = url.replace('?', `?key=${this.apiKey}`);
+		} else {
+			url = `${url}&key=${this.apiKey}`;
+		}
+
+    console.log(url);
 		const response = await fetch(
-			`${this.baseUrl}/routing/${this.versionNumber}${url}?key=${this.apiKey}`,
+			`${this.baseUrl}/routing/${this.versionNumber}${url}`,
 			{
 				headers: {
 					'Accept-Encoding': 'gzip',
