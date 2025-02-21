@@ -1,18 +1,34 @@
 {
 	"name": "@buslix/tomtom-sdk",
 	"version": "0.0.1",
-	"description": "This is TomTom Rest-API wrapper",
+	"description": "A lightweight, TypeScript-friendly wrapper around TomTom’s REST API, providing convenient methods for route calculations and other location-based services.",
 	"main": "index.js",
 	"scripts": {
 		"build": "tsc",
-		"dev": "tsc-watch --onSuccess \"node dist/index.js\"",
+		"build:prod": "tsc",
 		"start": "node dist/index.js"
 	},
 	"keywords": [
-		"TomTom"
+		"tomtom",
+		"tomtom-api",
+		"tomtom-wrapper",
+		"typescript",
+		"navigation"
 	],
+	"files": [
+		"dist/**/*",
+		"README.md"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Buslix/tomtom-sdk.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Buslix/tomtom-sdk/issues"
+	},
+	"homepage": "https://github.com/Buslix/tomtom-sdk#readme",
 	"author": "Marvin Koch",
-	"license": "ISC",
+	"license": "MIT",
 	"devDependencies": {
 		"@types/node": "^22.13.4",
 		"typescript": "^5.7.3"
