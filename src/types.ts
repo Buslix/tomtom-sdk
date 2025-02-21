@@ -4,3 +4,5 @@ type Point = {
 };
 
 export { Point };
+
+export * from './routes/calculate-route/types';
