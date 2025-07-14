@@ -63,4 +63,11 @@ type CalculateRouteResponse = {
   }[];
 };
 
-export { CalculateRouteOptions, CalculateRouteResponse };
+export {
+  CalculateRouteOptions,
+  CalculateRouteResponse,
+  Leg,
+  Section,
+  Summary,
+  TravelMode,
+};
