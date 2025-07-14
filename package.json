@@ -1,6 +1,6 @@
 {
 	"name": "@buslix/tomtom-sdk",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "A lightweight, TypeScript-friendly wrapper around TomTom’s REST API, providing convenient methods for route calculations and other location-based services.",
 	"main": "dist/index.js",
 	"scripts": {

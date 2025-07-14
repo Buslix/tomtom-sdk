@@ -15,6 +15,18 @@ type CalculateRouteOptions = {
   waypoints?: Point[];
   routeType?: "fastest" | "shortest" | "eco" | "thrilling";
   traffic?: boolean;
+  sectionType?:
+    | "carTrain"
+    | "ferry"
+    | "tunnel"
+    | "motorway"
+    | "pedestrian"
+    | "toll"
+    | "tollRoad"
+    | "tollVignette"
+    | "country"
+    | "travelMode"
+    | "traffic";
   travelMode?: TravelMode;
 };
 
@@ -32,6 +44,7 @@ type Section = {
   endPointIndex: number;
   sectionType: string;
   travelMode: TravelMode;
+  countryCode: string;
 };
 
 type Leg = {
