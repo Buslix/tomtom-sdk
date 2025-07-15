@@ -12,7 +12,13 @@ const buildCalculateRouteRequest = (options: CalculateRouteOptions) => {
 	const params = new URLSearchParams();
 	Object.entries(rest).forEach(([key, value]) => {
 		if (value !== undefined && value !== null) {
-			params.append(key, String(value));
+			if (Array.isArray(value)) {
+				value.forEach((item) => {
+					params.append(key, String(item));
+				});
+			} else {
+				params.append(key, String(value));
+			}
 		}
 	});
 
