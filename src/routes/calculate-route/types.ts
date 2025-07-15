@@ -64,8 +64,15 @@ type CalculateRouteResponse = {
 	routes: {
 		summary: Summary;
 		sections: Section[];
+		progress: Progress[];
 		legs: Leg[];
 	}[];
+};
+
+type Progress = {
+	distanceInMeters: number;
+	pointIndex: number;
+	travelTimeInSeconds: number;
 };
 
 export {
@@ -75,4 +82,5 @@ export {
 	Section,
 	Summary,
 	TravelMode,
+	Progress,
 };
