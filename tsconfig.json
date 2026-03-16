@@ -1,4 +1,6 @@
 {
+	"include": ["src"],
+	"exclude": ["**/__tests__/**", "**/*.test.ts"],
 	"compilerOptions": {
 		"module": "commonjs",
 		"declaration": true,

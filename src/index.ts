@@ -2,6 +2,7 @@
 
 export * from './tomtom/tomtom';
 export * from './types';
+export { haversineDistance } from './utils/haversine';
 
 // const tomtom = new TomTom('mXEPmZxmA8NZvejWwACCFHA4GCJ6iiB3');
 // tomtom
